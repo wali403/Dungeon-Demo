@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 908cd7bedba84b6428b9750b78434d43, type: 3}
+  m_Name: Room_MediumRoom_1
+  m_EditorClassIdentifier: 
+  guid: 1c7eae7e39b25ef41b0408f59533bdb9
+  prefab: {fileID: 7037687172248747827, guid: cbbdd78d5a840204d983a570b85aa2f1, type: 3}
+  previousPrefab: {fileID: 7037687172248747827, guid: cbbdd78d5a840204d983a570b85aa2f1, type: 3}
+  roomNodeType: {fileID: 11400000, guid: 06da4ae2bb828144097c314894b925a2, type: 2}
+  lowerBounds: {x: -16, y: -28}
+  upperBounds: {x: 17, y: 9}
+  doorwayList:
+  - position: {x: -8, y: 9}
+    orientation: 0
+    doorPrefab: {fileID: 8723112435823430838, guid: 4494b884b89025649bb67dafb9ffc7db, type: 3}
+    doorwayStartCopyPosition: {x: -11, y: 9}
+    doorwayCopyTileWidth: 5
+    doorwayCopyTileHeight: 5
+    isConnected: 0
+    isUnavailable: 0
+  - position: {x: 17, y: 0}
+    orientation: 1
+    doorPrefab: {fileID: 477323911277930844, guid: 9faa23117983d0842ac9df30f1c37247, type: 3}
+    doorwayStartCopyPosition: {x: 14, y: 5}
+    doorwayCopyTileWidth: 4
+    doorwayCopyTileHeight: 7
+    isConnected: 0
+    isUnavailable: 0
+  - position: {x: 9, y: -28}
+    orientation: 2
+    doorPrefab: {fileID: 8723112435823430838, guid: 4494b884b89025649bb67dafb9ffc7db, type: 3}
+    doorwayStartCopyPosition: {x: 6, y: -25}
+    doorwayCopyTileWidth: 5
+    doorwayCopyTileHeight: 4
+    isConnected: 0
+    isUnavailable: 0
+  - position: {x: -16, y: -19}
+    orientation: 3
+    doorPrefab: {fileID: 477323911277930844, guid: 9faa23117983d0842ac9df30f1c37247, type: 3}
+    doorwayStartCopyPosition: {x: -16, y: -14}
+    doorwayCopyTileWidth: 4
+    doorwayCopyTileHeight: 7
+    isConnected: 0
+    isUnavailable: 0
+  spawnPositionArray:
+  - {x: -8, y: 3}
+  - {x: -8, y: -2}
+  - {x: 9, y: 3}
+  - {x: 9, y: -2}
+  - {x: 9, y: -17}
+  - {x: 9, y: -22}
+  - {x: -8, y: -17}
+  - {x: -8, y: -22}

@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87563f94fb404914e8e7b70630fc098d, type: 3}
+  m_Name: PlayerDetails_Knight
+  m_EditorClassIdentifier: 
+  playerCharacterName: Knight
+  playerPrefab: {fileID: 4510372703809598668, guid: 5b4dce987e3c0ae4d860b5d726f85968, type: 3}
+  runtimeAnimatorController: {fileID: 9100000, guid: 2e1789864fed2634089f822e98970835, type: 2}
+  playerHealthAmount: 100
+  playerMinimapIcon: {fileID: 21300000, guid: 53eb2e4df3b144b4eb1f289f3b54d0a9, type: 3}
+  playerHandSprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}

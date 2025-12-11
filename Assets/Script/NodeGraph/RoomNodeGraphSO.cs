@@ -24,6 +24,20 @@ public class RoomNodeGraphSO : ScriptableObject
         }
     }
 
+    //传入房间类型返回对应房间
+    //用于寻找入口
+    public RoomNodeSO GetRoomNode(RoomNodeTypeSO roomNodeType)
+    {
+        foreach(RoomNodeSO node in roomNodeList)
+        {
+            if(node.roomNodeType == roomNodeType)
+            {
+                return node;
+            }
+        }
+        return null;
+    }
+
     public RoomNodeSO GetRoomNode(string roomNodeID)
     {
         if (roomNodeDictionary.TryGetValue(roomNodeID, out RoomNodeSO roomNode))
@@ -31,6 +45,17 @@ public class RoomNodeGraphSO : ScriptableObject
             return roomNode;
         }
         return null;
+    }
+
+    //IEnumerable<T>或者IEnumerator<T> 配合 yeild return
+    //当从这个方法生成的集合中拿单位时,每次拿取一个才会执行一次方法的返回
+    //而不是一次性把集合所有单位都取好
+    public IEnumerable<RoomNodeSO> GetChildRoomNodes(RoomNodeSO parrentRoomNode)
+    {
+        foreach(string childNodeID in parrentRoomNode.childRoomNodeIDList)
+        {
+            yield return GetRoomNode(childNodeID);
+        }
     }
 
     #region Editor Code

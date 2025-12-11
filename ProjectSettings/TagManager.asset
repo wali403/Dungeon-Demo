@@ -3,7 +3,17 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - grid
+  - groundTilemap
+  - decoration1Tilemap
+  - decoration2Tilemap
+  - frontTilemap
+  - roomTilemap
+  - miniMapPlayer
+  - playerWeapon
+  - minimap Tilemap
+  - collisionTilemap
   layers:
   - Default
   - TransparentFX
@@ -12,20 +22,20 @@ TagManager:
   - Water
   - UI
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - IgnoreAmmo
+  - Carema 1
+  - Carema 2
+  - Player
+  - MiniMap
+  - Room
+  - Wall
+  - PlayerAmmo
+  - Enemy
+  - EnemyAmmo
+  - Environment
+  - PlayerWeapon
+  - EnemyWeapon
+  - Carema3
   - 
   - 
   - 
