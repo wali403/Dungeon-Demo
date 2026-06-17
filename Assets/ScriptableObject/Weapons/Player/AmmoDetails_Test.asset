@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64b3c7f251c8402438dba30e00c85bb6, type: 3}
+  m_Name: AmmoDetails_Test
+  m_EditorClassIdentifier: 
+  ammoName: test
+  isPlayer: 1
+  ammoSprite: {fileID: 569223832, guid: c07d1a0227de81547a4550d23b20d922, type: 3}
+  ammoPrefabArray:
+  - {fileID: 3377870502854025434, guid: f9d2c86745b74d84a82747894e4e3205, type: 3}
+  ammoMaterial: {fileID: -876546973899608171, guid: af63f409c96624a4fa4cf72adca0234f, type: 3}
+  ammoChargeTime: 0
+  ammoChargeMaterial: {fileID: 0}
+  ammoDemage: 6
+  ammoSpeedMin: 15
+  ammoSpeedMax: 15
+  ammoRange: 12
+  ammoRotationSpeed: 1
+  ammoSpreadMin: 2
+  ammoSpreadMax: 4
+  ammoSpawnAmountMin: 1
+  ammoSpawnAmountMax: 1
+  ammoSpawnIntervalMin: 0
+  ammoSpawnIntervalMax: 0
+  isAmmoTrail: 0
+  ammoTrailTime: 0
+  ammoTrailMaterial: {fileID: 0}
+  ammoTrailStartWidth: 0
+  ammoTrailEndWidth: 0

@@ -32,7 +32,7 @@ public class AmmoDetailsSO : ScriptableObject
     #region Tooltip
     [Tooltip("子弹使用的材质")]
     #endregion Tooltip
-    public Sprite ammoMaterial;
+    public Material ammoMaterial;
     #region Tooltip
     [Tooltip("子弹蓄力时间,当子弹出现后,发射出来需要的秒数")]
     #endregion Tooltip
@@ -140,10 +140,19 @@ public class AmmoDetailsSO : ScriptableObject
         HelperUtilities.ValidateCheckPositiveValue(this, nameof(ammoDemage), ammoDemage, false);
         HelperUtilities.ValidateCheckPositiveRange(this, nameof(ammoSpeedMin), ammoSpeedMin, nameof(ammoSpeedMax), ammoSpeedMax, false);
         HelperUtilities.ValidateCheckPositiveValue(this, nameof(ammoRange), ammoRange, false);
+        HelperUtilities.ValidateCheckPositiveValue(this, nameof(ammoRotationSpeed), ammoRotationSpeed, false);
         HelperUtilities.ValidateCheckPositiveRange(this, nameof(ammoSpreadMin), ammoSpreadMin, nameof(ammoSpreadMax), ammoSpreadMax, true);
         HelperUtilities.ValidateCheckPositiveRange(this, nameof(ammoSpawnAmountMin), ammoSpawnAmountMin, nameof(ammoSpawnAmountMax),
             ammoSpawnAmountMax, false);
-        //HelperUtilities.ValidateCheckPositiveRange(this, nameof())
+        HelperUtilities.ValidateCheckPositiveRange(this, nameof(ammoSpawnIntervalMin), ammoSpawnIntervalMin, nameof(ammoSpawnIntervalMax),
+            ammoSpawnIntervalMax, true);
+        if (isAmmoTrail)
+        {
+            HelperUtilities.ValidateCheckPositiveValue(this, nameof(ammoTrailTime), ammoTrailTime, false);
+            HelperUtilities.ValidateCheckNullValue(this, nameof(ammoTrailMaterial), ammoTrailMaterial);
+            HelperUtilities.ValidateCheckPositiveValue(this, nameof(ammoTrailStartWidth), ammoTrailStartWidth, false);
+            HelperUtilities.ValidateCheckPositiveValue(this, nameof(ammoTrailEndWidth), ammoTrailEndWidth, false);
+        }
     }
 
 #endif

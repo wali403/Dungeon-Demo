@@ -33,6 +33,13 @@ public static class HelperUtilities
         return degrees;
     }
 
+    //返回一个角度对应的方向向量
+    public static Vector3 GetDirectionVectorFromAngle(float angle)
+    {
+        Vector3 directionVector = new Vector3(Mathf.Cos(Mathf.Deg2Rad * angle), Mathf.Sin(Mathf.Deg2Rad * angle));
+        return directionVector;
+    }
+
     public static AimDirection GetAimDirection(float angleDegrees)
     {
         AimDirection aimDirection;

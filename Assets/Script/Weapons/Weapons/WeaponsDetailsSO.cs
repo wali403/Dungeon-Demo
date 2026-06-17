@@ -24,10 +24,10 @@ public class WeaponsDetailsSO : ScriptableObject
     [Tooltip("武器发射位置 - 从精灵轴心点算起的枪口的位置")]
     #endregion Tooltip
     public Vector3 weaponShootPosition;
-    //#region Tooltip
-    //[Tooltip("武器当前的子弹")]
-    //#endregion Tooltip
-    //public AmmoDetailsSO weaponCurrentAmmo;
+    #region Tooltip
+    [Tooltip("武器当前的子弹")]
+    #endregion Tooltip
+    public AmmoDetailsSO weaponCurrentAmmo;
 
     #region Header WEAPON CONFIGURATION
     [Space(10)]
@@ -69,7 +69,7 @@ public class WeaponsDetailsSO : ScriptableObject
     {
         HelperUtilities.ValidateCheckEmptyString(this, nameof(weaponName), weaponName);
         HelperUtilities.ValidateCheckNullValue(this, nameof(weaponSprite), weaponSprite);
-        //HelperUtilities.ValidateCheckNullValue(this, nameof(weaponCurrentAmmo), weaponCurrentAmmo);
+        HelperUtilities.ValidateCheckNullValue(this, nameof(weaponCurrentAmmo), weaponCurrentAmmo);
 
         HelperUtilities.ValidateCheckPositiveValue(this, nameof(weaponFireRate), weaponFireRate, false);
         HelperUtilities.ValidateCheckPositiveValue(this, nameof(weaponPrechargeTime), weaponPrechargeTime, true);

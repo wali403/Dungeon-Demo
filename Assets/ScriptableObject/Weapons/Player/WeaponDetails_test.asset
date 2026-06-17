@@ -10,11 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 33fd818f5f702404d9727491d272abed, type: 3}
-  m_Name: WeaponDetails_test
+  m_Name: WeaponDetails_Test
   m_EditorClassIdentifier: 
   weaponName: test
   weaponSprite: {fileID: 367105240, guid: c07d1a0227de81547a4550d23b20d922, type: 3}
   weaponShootPosition: {x: 0, y: 0, z: 0}
+  weaponCurrentAmmo: {fileID: 11400000, guid: 7a5bfe1bc73ea5345b8bc47899426ebe, type: 2}
   hasInfiniteAmmo: 1
   hasInfiniteClipCapacity: 1
   weaponClipAmmoCapacity: 5
